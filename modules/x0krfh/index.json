@@ -1,0 +1,51 @@
+{
+  "name": "Değer Doku Karo — malzeme dokulu bento karoları",
+  "description": "Değerler malzeme dokulu karolardan (ahşap damar, keten örgü, mermer, fırçalı metal — CSS ile, tema renginden; `img` varsa gerçek doku fotoğrafı) oluşan bir bento: ilk karo 2×2. Üzerine gelince doku büyür; dokununca / Enter ile karo genişleyip açıklamanın tamamını gösterir. hizmet-bento/deger-cam düz zeminli hücrelerdir; burada her karonun zemini bir malzeme dokusudur, etiket kartı dokunun üstünde durur ve karo tıklanınca ızgarada büyür (cevir → 2×2). Metinler dil sözlüğü, renkler desing + var(--mx-site-*), mantıksal CSS → RTL. Veri yoksa blok basılmaz.",
+  "version": "1.0.0",
+  "icon": "texture",
+  "category": "values",
+  "subCategory": "texture-bento",
+  "tags": [
+    "values",
+    "bento",
+    "texture",
+    "material",
+    "expand",
+    "rtl",
+    "fabrika"
+  ],
+  "desing": {
+    "max": "1200px",
+    "bosluk": "clamp(56px, 8vw, 104px)",
+    "yuvarlak": "18px",
+    "ust": "",
+    "baslik": "",
+    "metin": "",
+    "bg": "var(--mx-site-bg, #ffffff)",
+    "text": "var(--mx-site-text, #111318)",
+    "muted": "color-mix(in srgb, var(--mx-site-text, #111318) 68%, var(--mx-site-bg, #ffffff))",
+    "kartBg": "var(--mx-site-surface, #f6f7f9)",
+    "cizgi": "color-mix(in srgb, var(--mx-site-text, #111318) 12%, transparent)",
+    "accent": "var(--mx-site-primary, #2563eb)",
+    "accentInk": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 70%, var(--mx-site-text, #111318))",
+    "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+    "vurguBg": "var(--mx-site-primary, #2563eb)",
+    "vurguText": "var(--mx-site-primary-contrast, #ffffff)",
+    "bgcolor": "var(--mx-site-bg, #ffffff)",
+    "color": "var(--mx-site-text, #111318)"
+  },
+  "data": [],
+  "veri": {
+    "statik": true,
+    "dinamik": false,
+    "kaynak": "data",
+    "alanlar": {
+      "ikon": "Material Symbols adı",
+      "baslik": "dil sözlüğü (zorunlu)",
+      "metin": "dil sözlüğü",
+      "etiket": "dil sözlüğü (küçük üst etiket)",
+      "img": "görsel yolu (destekleyen yerleşimde)",
+      "url": "iç/dış bağlantı (kartın tamamı tıklanır)"
+    }
+  }
+}

@@ -1,0 +1,196 @@
+<section class="modulex-koleksiyon-satir-acilim{{fbsinif}}" {{fbetiket}}>
+  <div class="modulex-koleksiyon-satir-acilim-ic">
+    {{fbbas}}
+    {{fbgovde}}
+  </div>
+</section>
+
+<style>
+  /* koleksiyon-satir-acilim — body/koleksiyon-vitrin'in (desing kategorileri + ayar/gram satırlı kart, «Fiyat için danışın») ve arac-ilan-filtre'nin yan çekmecesinden farkı: ayrıntı katman/çekmece değil, ızgaranın içinde tıklanan satırın altına açılan şerit (Google Görseller tipi satır açılımı) ve görsel değiştiren küçük resimler; tanitim-gorsel-serit'in kaydırmalı rayından farklı olarak ızgara sabit. */
+  .modulex-koleksiyon-satir-acilim { box-sizing: border-box; width: 100%; padding: --bosluk-- 20px; background: --bg--; color: --text--; font-size: 1rem; line-height: 1.6; font-family: var(--mx-font-sans, inherit); overflow-wrap: break-word; }
+  .modulex-koleksiyon-satir-acilim *, .modulex-koleksiyon-satir-acilim *::before, .modulex-koleksiyon-satir-acilim *::after { box-sizing: border-box; }
+  /* ham/css.css «* { font-size: 14px }» kalıtımı keser — modül içinde boyut üstten gelsin (ikon yazı tipi hariç) */
+  .modulex-koleksiyon-satir-acilim :where(*:not(.material-symbols-outlined)) { font-size: inherit; }
+  /* aynı «*» kuralı font-weight 400 · line-height 1.2 · font-family de basar — modül içinde kalıtım */
+  .modulex-koleksiyon-satir-acilim :where(*:not(.material-symbols-outlined)) { font-weight: inherit; line-height: inherit; font-family: inherit; }
+  .modulex-koleksiyon-satir-acilim :where(h2, h3, h4, p, ul, ol, li, figure, blockquote, dl, dd) { margin: 0; }
+  .modulex-koleksiyon-satir-acilim :where(ul, ol) { padding: 0; list-style: none; }
+  .modulex-koleksiyon-satir-acilim img { display: block; max-width: 100%; }
+  /* <img width height> öznitelik yüksekliği CSS aspect-ratio'yu ezer — sıfır özgüllükle auto (modül sınıfının height'ı yine kazanır) */
+  :where(.modulex-koleksiyon-satir-acilim) img { height: auto; }
+  .modulex-koleksiyon-satir-acilim [hidden] { display: none !important; }
+  .modulex-koleksiyon-satir-acilim :where(a, button, summary, [data-cevir]) { cursor: pointer; }
+  .modulex-koleksiyon-satir-acilim :where(a, button, summary, [tabindex]):focus-visible { outline: 3px solid --accent--; outline-offset: 3px; }
+  .modulex-koleksiyon-satir-acilim-ic { max-width: --max--; margin-inline: auto; }
+  .modulex-koleksiyon-satir-acilim-bas { display: grid; gap: 12px; margin-block-end: clamp(32px, 4vw, 52px); }
+  .modulex-koleksiyon-satir-acilim--bassiz .modulex-koleksiyon-satir-acilim-bas { display: none; }
+  .modulex-koleksiyon-satir-acilim-ust { color: --accentInk--; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; }
+  .modulex-koleksiyon-satir-acilim-baslik { font-family: var(--mx-font-heading, inherit); font-size: clamp(1.8rem, 3.4vw, 2.8rem); font-weight: 750; letter-spacing: -0.025em; line-height: 1.1; }
+  .modulex-koleksiyon-satir-acilim-metin { color: --muted--; font-size: 1.05rem; line-height: 1.7; }
+  .modulex-koleksiyon-satir-acilim-cta { display: flex; flex-wrap: wrap; gap: 12px; margin-block-start: 8px; }
+  .modulex-koleksiyon-satir-acilim-dugme { display: inline-flex; align-items: center; gap: 8px; min-height: 48px; padding: 12px 22px; border: 2px solid --accent--; border-radius: 999px; background: --accent--; color: --accentText--; font-weight: 700; text-decoration: none; transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease; }
+  .modulex-koleksiyon-satir-acilim-dugme:hover { transform: translateY(-2px); }
+  .modulex-koleksiyon-satir-acilim-dugme--ikincil { background: transparent; color: --text--; border-color: --cizgi--; }
+  .modulex-koleksiyon-satir-acilim-dugme--ikincil:hover { border-color: --accent--; }
+  .modulex-koleksiyon-satir-acilim-dugme .material-symbols-outlined { font-size: 20px; }
+
+  .modulex-koleksiyon-satir-acilim-giris { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 18px 40px; margin-block-end: clamp(28px, 4vw, 48px); }
+  .modulex-koleksiyon-satir-acilim-gyazi { display: grid; gap: 14px; max-width: 700px; }
+  .modulex-koleksiyon-satir-acilim-urunler { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr)); gap: 28px 18px; }
+  .modulex-koleksiyon-satir-acilim-urun { position: relative; display: grid; align-content: start; gap: 12px; }
+  .modulex-koleksiyon-satir-acilim-kap { position: relative; overflow: hidden; aspect-ratio: 1; border-radius: --yuvarlak--; background: --kartBg--; transition: outline-color 0.3s ease; outline: 3px solid transparent; outline-offset: 4px; }
+  .modulex-koleksiyon-satir-acilim-urun.modulex-koleksiyon-satir-acilim--acik .modulex-koleksiyon-satir-acilim-kap { outline-color: --accent--; }
+  .modulex-koleksiyon-satir-acilim-foto, .modulex-koleksiyon-satir-acilim-foto2 { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: opacity 0.5s ease, transform 0.7s ease; }
+  .modulex-koleksiyon-satir-acilim-foto2 { opacity: 0; }
+  .modulex-koleksiyon-satir-acilim-urun:hover .modulex-koleksiyon-satir-acilim-foto2 { opacity: 1; }
+  .modulex-koleksiyon-satir-acilim-urun:hover .modulex-koleksiyon-satir-acilim-foto { transform: scale(1.05); }
+  .modulex-koleksiyon-satir-acilim-yer { display: grid; place-items: center; height: 100%; color: --accentInk--; }
+  .modulex-koleksiyon-satir-acilim-yer .material-symbols-outlined { font-size: 64px; }
+  .modulex-koleksiyon-satir-acilim-bilgi { display: grid; gap: 6px; }
+  .modulex-koleksiyon-satir-acilim-uad { font-size: 1rem; font-weight: 700; }
+  .modulex-koleksiyon-satir-acilim-ufiyat { color: --accentInk--; font-weight: 800; font-variant-numeric: tabular-nums; }
+  .modulex-koleksiyon-satir-acilim-ozel { display: flex; flex-wrap: wrap; gap: 6px; }
+  .modulex-koleksiyon-satir-acilim-ozel li { padding: 3px 10px; border: 1px solid --cizgi--; border-radius: 999px; font-size: 0.8rem; }
+  .modulex-koleksiyon-satir-acilim-ozel span { color: --muted--; }
+  .modulex-koleksiyon-satir-acilim-uacik { color: --muted--; font-size: 0.9rem; }
+  .modulex-koleksiyon-satir-acilim-ubag { display: inline-flex; align-items: center; gap: 6px; color: --accentInk--; font-weight: 700; text-decoration: none; }
+  .modulex-koleksiyon-satir-acilim--js .modulex-koleksiyon-satir-acilim-urun :is(.modulex-koleksiyon-satir-acilim-ozel, .modulex-koleksiyon-satir-acilim-uacik, .modulex-koleksiyon-satir-acilim-ubag) { display: none; }
+  .modulex-koleksiyon-satir-acilim-ac { position: absolute; inset: 0; width: 100%; padding: 0; border: 0; border-radius: --yuvarlak--; background: transparent; }
+  .modulex-koleksiyon-satir-acilim-gizli { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+  .modulex-koleksiyon-satir-acilim-acilim { position: relative; grid-column: 1 / -1; display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: clamp(20px, 4vw, 48px); padding: clamp(20px, 3vw, 36px); border-radius: --yuvarlak--; background: --vurguBg--; color: --vurguText--; }
+  .modulex-koleksiyon-satir-acilim-acilim::before { content: ""; position: absolute; inset-block-start: -10px; inset-inline-start: calc(var(--ok, 50%) - 12px); width: 24px; height: 24px; border-radius: 4px; background: inherit; transform: rotate(45deg); transition: inset-inline-start 0.3s ease; }
+  .modulex-koleksiyon-satir-acilim-acilim.modulex-koleksiyon-satir-acilim--tazele { animation: modulex-koleksiyon-satir-acilim-ac 0.45s cubic-bezier(0.2, 0.8, 0.2, 1) both; }
+  .modulex-koleksiyon-satir-acilim-agaleri { position: relative; display: grid; gap: 10px; align-content: start; }
+  .modulex-koleksiyon-satir-acilim-abuyuk { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: calc(--yuvarlak-- * 0.7); }
+  .modulex-koleksiyon-satir-acilim-agaleri .modulex-koleksiyon-satir-acilim-yer { min-height: 220px; border-radius: calc(--yuvarlak-- * 0.7); background: color-mix(in srgb, --vurguText-- 12%, transparent); color: inherit; }
+  .modulex-koleksiyon-satir-acilim-kucukler { display: flex; gap: 8px; }
+  .modulex-koleksiyon-satir-acilim-kucuk { width: 64px; height: 64px; padding: 0; overflow: hidden; border: 2px solid transparent; border-radius: 10px; background: none; opacity: 0.7; transition: opacity 0.2s ease, border-color 0.2s ease; }
+  .modulex-koleksiyon-satir-acilim-kucuk[aria-pressed="true"] { border-color: --vurguText--; opacity: 1; }
+  .modulex-koleksiyon-satir-acilim-kucuk img { width: 100%; height: 100%; object-fit: cover; }
+  .modulex-koleksiyon-satir-acilim-abilgi { display: grid; align-content: center; gap: 14px; padding-inline-end: 36px; }
+  .modulex-koleksiyon-satir-acilim-abilgi .modulex-koleksiyon-satir-acilim-uad { font-family: var(--mx-font-heading, inherit); font-size: clamp(1.5rem, 3vw, 2.2rem); line-height: 1.15; }
+  .modulex-koleksiyon-satir-acilim-abilgi :is(.modulex-koleksiyon-satir-acilim-ufiyat, .modulex-koleksiyon-satir-acilim-ubag, .modulex-koleksiyon-satir-acilim-uacik, .modulex-koleksiyon-satir-acilim-ozel span) { color: inherit; }
+  .modulex-koleksiyon-satir-acilim-abilgi .modulex-koleksiyon-satir-acilim-ufiyat { font-size: 1.4rem; }
+  .modulex-koleksiyon-satir-acilim-abilgi .modulex-koleksiyon-satir-acilim-uacik { font-size: 1rem; }
+  .modulex-koleksiyon-satir-acilim-abilgi .modulex-koleksiyon-satir-acilim-ozel li { border-color: color-mix(in srgb, --vurguText-- 40%, transparent); }
+  .modulex-koleksiyon-satir-acilim-kapat { position: absolute; inset-block-start: 12px; inset-inline-end: 12px; display: inline-grid; place-items: center; width: 40px; height: 40px; border: 0; border-radius: 50%; background: color-mix(in srgb, --vurguText-- 16%, transparent); color: inherit; transition: transform 0.2s ease; }
+  .modulex-koleksiyon-satir-acilim-kapat:hover { transform: rotate(90deg); }
+  @keyframes modulex-koleksiyon-satir-acilim-ac { from { opacity: 0; transform: translateY(-8px); } to { opacity: 1; transform: none; } }
+  @media (max-width: 768px) {
+    .modulex-koleksiyon-satir-acilim-urunler { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px 12px; }
+    .modulex-koleksiyon-satir-acilim-acilim { grid-template-columns: minmax(0, 1fr); }
+    .modulex-koleksiyon-satir-acilim-abilgi { padding-inline-end: 0; }
+  }
+  .modulex-koleksiyon-satir-acilim-bag { color: inherit; text-decoration: none; }
+  .modulex-koleksiyon-satir-acilim-bag:hover { text-decoration: underline; text-underline-offset: 4px; }
+  .modulex-koleksiyon-satir-acilim-mbaslik { font-size: 1.05rem; font-weight: 700; }
+  .modulex-koleksiyon-satir-acilim-mmetin { color: --muted--; font-size: 0.95rem; }
+
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-koleksiyon-satir-acilim :is(.modulex-koleksiyon-satir-acilim-baslik, .modulex-koleksiyon-satir-acilim-ust, h3, h4, strong) { letter-spacing: 0; }
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-koleksiyon-satir-acilim-baslik { line-height: 1.35; }
+  @media (max-width: 768px) {
+    .modulex-koleksiyon-satir-acilim { padding-inline: 16px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .modulex-koleksiyon-satir-acilim *, .modulex-koleksiyon-satir-acilim *::before, .modulex-koleksiyon-satir-acilim *::after { animation: none !important; transition: none !important; }
+  }
+</style>
+<script>
+  (() => {
+    const P = "modulex-koleksiyon-satir-acilim";
+    const az = !!(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+    const satirAcilim = (s, P, az) => {
+        const ul = s.querySelector("[data-urunler]");
+        const pn = s.querySelector("[data-acilim]");
+        if (!ul || !pn) return;
+        s.classList.add(P + "--js");
+        const ur = [...ul.querySelectorAll("[data-urun]")];
+        const gal = pn.querySelector("[data-agaleri]");
+        const bil = pn.querySelector("[data-abilgi]");
+        const kap = pn.querySelector("[data-kapat]");
+        let acik = -1;
+        const yerles = () => {
+          if (acik < 0) return;
+          pn.hidden = true;
+          const t = ur[acik];
+          let son = t;
+          for (let j = acik + 1; j < ur.length && Math.abs(ur[j].offsetTop - t.offsetTop) < 4; j++) son = ur[j];
+          son.after(pn);
+          pn.hidden = false;
+          const r = ul.getBoundingClientRect();
+          const b = t.getBoundingClientRect();
+          const rtl = getComputedStyle(s).direction === "rtl";
+          pn.style.setProperty("--ok", Math.round((rtl ? r.right - b.right : b.left - r.left) + b.width / 2) + "px");
+        };
+        const isaretle = (i) => ur.forEach((u, j) => {
+          u.classList.toggle(P + "--acik", j === i);
+          const x = u.querySelector("[data-ac]");
+          if (x) x.setAttribute("aria-expanded", String(j === i));
+        });
+        const kapat = () => {
+          if (acik < 0) return;
+          const b = ur[acik].querySelector("[data-ac]");
+          acik = -1;
+          pn.hidden = true;
+          isaretle(-1);
+          if (b) b.focus();
+        };
+        const ac = (i) => {
+          if (acik === i) { kapat(); return; }
+          acik = i;
+          const t = ur[i];
+          isaretle(i);
+          const gs = [t.dataset.g1, t.dataset.g2].filter(Boolean);
+          const buyuk = document.createElement("img");
+          buyuk.className = P + "-abuyuk";
+          buyuk.alt = "";
+          buyuk.width = 900;
+          buyuk.height = 900;
+          buyuk.decoding = "async";
+          const kucuk = document.createElement("div");
+          kucuk.className = P + "-kucukler";
+          const goster = (j) => { buyuk.src = gs[j]; [...kucuk.children].forEach((c, m) => c.setAttribute("aria-pressed", String(m === j))); };
+          gs.forEach((g, j) => {
+            const b = document.createElement("button");
+            b.type = "button";
+            b.className = P + "-kucuk";
+            b.setAttribute("aria-label", String(j + 1) + " / " + String(gs.length));
+            const im = document.createElement("img");
+            im.src = g;
+            im.alt = "";
+            im.width = 120;
+            im.height = 120;
+            b.append(im);
+            b.addEventListener("click", () => goster(j));
+            kucuk.append(b);
+          });
+          const yer = t.querySelector("[data-yer]");
+          gal.replaceChildren(...(gs.length ? (gs.length > 1 ? [buyuk, kucuk] : [buyuk]) : yer ? [yer.cloneNode(true)] : []));
+          if (gs.length) goster(0);
+          const bilgi = t.querySelector("[data-bilgi]");
+          bil.replaceChildren(...(bilgi ? [...bilgi.children].map((c) => c.cloneNode(true)) : []));
+          yerles();
+          pn.classList.remove(P + "--tazele");
+          void pn.offsetWidth;
+          pn.classList.add(P + "--tazele");
+          const r = pn.getBoundingClientRect();
+          if (r.bottom > innerHeight || r.top < 0) pn.scrollIntoView({ block: "nearest", behavior: az ? "auto" : "smooth" });
+        };
+        ur.forEach((u, i) => {
+          const b = u.querySelector("[data-ac]");
+          if (!b) return;
+          b.hidden = false;
+          b.addEventListener("click", () => ac(i));
+        });
+        if (kap) kap.addEventListener("click", kapat);
+        s.addEventListener("keydown", (e) => { if (e.key === "Escape" && acik >= 0) kapat(); });
+        let z = 0;
+        addEventListener("resize", () => { clearTimeout(z); z = setTimeout(yerles, 120); });
+      };
+    document.querySelectorAll("." + P).forEach((s) => {
+      if (s.dataset.fbHazir) return;
+      s.dataset.fbHazir = "1";
+      satirAcilim(s, P, az);
+    });
+  })();
+</script>

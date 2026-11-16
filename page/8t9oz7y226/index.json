@@ -1,0 +1,40 @@
+{
+  "id": "8t9oz7y226",
+  "name": {
+    "tr": "Koleksiyon",
+    "en": "Collection",
+    "ar": "المجموعة"
+  },
+  "description": {
+    "tr": "Oturma, yemek ve yatak odası parçaları.",
+    "en": "Living, dining and bedroom pieces.",
+    "ar": "قطع لغرف الجلوس والطعام والنوم."
+  },
+  "keyword": {
+    "tr": "Malzeme",
+    "en": "Materials",
+    "ar": "الخامات"
+  },
+  "path": "hizmetler",
+  "icon": "work",
+  "category": "",
+  "status": "play",
+  "desing": {
+    "header": [],
+    "body": [
+      "hqww9a",
+      "12zxov"
+    ],
+    "footer": []
+  },
+  "index": 0,
+  "url": "",
+  "text": {},
+  "title": {
+    "tr": "Koleksiyon",
+    "en": "Collection",
+    "ar": "المجموعة"
+  },
+  "date": "2026-11-16T11:36:38.788Z",
+  "update": "2026-11-16T11:41:42.203Z"
+}

@@ -1,0 +1,107 @@
+<section class="modulex-cagri-davetiye{{fbsinif}}" {{fbetiket}}>
+  <div class="modulex-cagri-davetiye-ic">
+    {{fbbas}}
+    {{fbgovde}}
+  </div>
+</section>
+
+<style>
+  /* cagri-davetiye — cagri-bilet kupon, cagri-not-kagidi kâğıt metaforudur ama hep açıktır; bu modül açılma anı kurar (kapak + mühür etkileşimi) — randevulu, kişiye özel gösterim daveti için tören hissi. Ailede gizle-aç iskeleti yok. */
+  .modulex-cagri-davetiye { box-sizing: border-box; width: 100%; padding: --bosluk-- 20px; background: --bg--; color: --yaziRenk--; font-size: 1rem; line-height: 1.6; font-family: var(--mx-font-sans, inherit); overflow-wrap: break-word; }
+  .modulex-cagri-davetiye *, .modulex-cagri-davetiye *::before, .modulex-cagri-davetiye *::after { box-sizing: border-box; }
+  /* ham/css.css «* { font-size: 14px }» kalıtımı keser — modül içinde boyut üstten gelsin (ikon yazı tipi hariç) */
+  .modulex-cagri-davetiye :where(*:not(.material-symbols-outlined)) { font-size: inherit; }
+  /* aynı «*» kuralı font-weight 400 · line-height 1.2 · font-family de basar — modül içinde kalıtım */
+  .modulex-cagri-davetiye :where(*:not(.material-symbols-outlined)) { font-weight: inherit; line-height: inherit; font-family: inherit; }
+  .modulex-cagri-davetiye :where(h2, h3, h4, p, ul, ol, li, figure, blockquote, dl, dd) { margin: 0; }
+  .modulex-cagri-davetiye :where(ul, ol) { padding: 0; list-style: none; }
+  .modulex-cagri-davetiye img { display: block; max-width: 100%; }
+  /* <img width height> öznitelik yüksekliği CSS aspect-ratio'yu ezer — sıfır özgüllükle auto (modül sınıfının height'ı yine kazanır) */
+  :where(.modulex-cagri-davetiye) img { height: auto; }
+  .modulex-cagri-davetiye [hidden] { display: none !important; }
+  .modulex-cagri-davetiye :where(a, button, summary, [data-cevir]) { cursor: pointer; }
+  .modulex-cagri-davetiye :where(a, button, summary, [tabindex]):focus-visible { outline: 3px solid --accent--; outline-offset: 3px; }
+  .modulex-cagri-davetiye-ic { max-width: --max--; margin-inline: auto; }
+  .modulex-cagri-davetiye-bas { display: grid; gap: 12px; margin-block-end: clamp(32px, 4vw, 52px); }
+  .modulex-cagri-davetiye--bassiz .modulex-cagri-davetiye-bas { display: none; }
+  .modulex-cagri-davetiye-ust { color: --accentInk--; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; }
+  .modulex-cagri-davetiye-baslik { font-family: var(--mx-font-heading, inherit); font-size: clamp(1.8rem, 3.4vw, 2.8rem); font-weight: 750; letter-spacing: -0.025em; line-height: 1.1; }
+  .modulex-cagri-davetiye-metin { color: --muted--; font-size: 1.05rem; line-height: 1.7; }
+  .modulex-cagri-davetiye-cta { display: flex; flex-wrap: wrap; gap: 12px; margin-block-start: 8px; }
+  .modulex-cagri-davetiye-dugme { display: inline-flex; align-items: center; gap: 8px; min-height: 48px; padding: 12px 22px; border: 2px solid --accent--; border-radius: 999px; background: --accent--; color: --accentText--; font-weight: 700; text-decoration: none; transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease; }
+  .modulex-cagri-davetiye-dugme:hover { transform: translateY(-2px); }
+  .modulex-cagri-davetiye-dugme--ikincil { background: transparent; color: --yaziRenk--; border-color: --cizgi--; }
+  .modulex-cagri-davetiye-dugme--ikincil:hover { border-color: --accent--; }
+  .modulex-cagri-davetiye-dugme .material-symbols-outlined { font-size: 20px; }
+
+  .modulex-cagri-davetiye-davet { position: relative; perspective: 1400px; }
+  .modulex-cagri-davetiye-kart { display: grid; justify-items: center; gap: 16px; padding: clamp(40px, 7vw, 72px) clamp(24px, 6vw, 64px); border-radius: 4px; background: --kartBg--; text-align: center; box-shadow: inset 0 0 0 1px --cizgi--, inset 0 0 0 10px --kartBg--, inset 0 0 0 11px color-mix(in srgb, --accent-- 60%, --kartBg--), 0 40px 70px -50px color-mix(in srgb, --yaziRenk-- 80%, transparent); transition: transform 0.9s ease 0.2s, opacity 0.9s ease 0.2s; }
+  .modulex-cagri-davetiye-kart:focus { outline: none; }
+  .modulex-cagri-davetiye-ikon { color: --accentInk--; font-size: 36px; }
+  .modulex-cagri-davetiye-baslik { font-weight: 500; font-style: italic; letter-spacing: -0.01em; }
+  .modulex-cagri-davetiye-tarih { display: flex; align-items: center; gap: 14px; inline-size: 100%; color: --accentInk--; font-size: 0.95rem; font-weight: 700; letter-spacing: 0.06em; }
+  .modulex-cagri-davetiye-tcizgi { flex: 1; min-width: 24px; height: 1px; background: linear-gradient(90deg, transparent, --accent--); }
+  .modulex-cagri-davetiye-tcizgi:last-child { background: linear-gradient(270deg, transparent, --accent--); }
+  .modulex-cagri-davetiye-cta { justify-content: center; }
+  .modulex-cagri-davetiye-kapak { display: none; }
+  .modulex-cagri-davetiye--zjs .modulex-cagri-davetiye-kapak { position: absolute; inset: 0; z-index: 2; display: grid; place-content: center; justify-items: center; gap: 16px; padding: 24px; border: 0; border-radius: 4px; background: --vurguBg--; color: --vurguText--; font: inherit; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; transform-origin: 50% 0; transition: transform 0.9s cubic-bezier(0.5, 0, 0.2, 1), opacity 0.6s ease 0.3s, visibility 0s linear 0.9s; }
+  .modulex-cagri-davetiye--zjs .modulex-cagri-davetiye-kapak::before { content: ""; position: absolute; inset: 0 0 auto; height: 58%; background: color-mix(in srgb, --vurguBg-- 82%, --yaziRenk--); clip-path: polygon(0 0, 100% 0, 50% 100%); }
+  .modulex-cagri-davetiye-muhur { position: relative; display: grid; place-items: center; width: 84px; height: 84px; border-radius: 50%; background: --vurguText--; color: --vurguBg--; box-shadow: 0 0 0 6px color-mix(in srgb, --vurguText-- 30%, transparent); transition: transform 0.35s ease; }
+  .modulex-cagri-davetiye-muhur .material-symbols-outlined { font-size: 40px; }
+  .modulex-cagri-davetiye-kyazi { position: relative; font-size: 0.85rem; }
+  .modulex-cagri-davetiye--zjs .modulex-cagri-davetiye-kapak:hover .modulex-cagri-davetiye-muhur { transform: scale(1.08) rotate(-8deg); }
+  .modulex-cagri-davetiye--zjs .modulex-cagri-davetiye-kapak:focus-visible { outline-color: --vurguText--; outline-offset: -8px; }
+  .modulex-cagri-davetiye--zjs:not(.modulex-cagri-davetiye--acik) .modulex-cagri-davetiye-kart { transform: scale(0.97); opacity: 0.6; }
+  .modulex-cagri-davetiye--acik .modulex-cagri-davetiye-kapak { visibility: hidden; opacity: 0; transform: rotateX(-120deg); }
+  @media (max-width: 768px) {
+    .modulex-cagri-davetiye-kart { padding: 40px 20px; }
+    .modulex-cagri-davetiye-tarih { flex-direction: column; gap: 8px; }
+    .modulex-cagri-davetiye-tcizgi { inline-size: 60px; flex: none; }
+  }
+  .modulex-cagri-davetiye-wasvg { width: 1.25em; height: 1.25em; flex: none; }
+  .modulex-cagri-davetiye-maddeler { display: grid; gap: 12px; }
+  .modulex-cagri-davetiye-madde { display: flex; align-items: flex-start; gap: 12px; }
+  .modulex-cagri-davetiye-mikon { flex: none; color: --accentInk--; font-size: 24px; }
+  .modulex-cagri-davetiye-myazi { display: grid; gap: 2px; }
+  .modulex-cagri-davetiye-myazi strong { font-weight: 700; }
+  .modulex-cagri-davetiye-myazi small { color: --muted--; font-size: 0.92rem; }
+  .modulex-cagri-davetiye-not { color: --muted--; font-size: 0.9rem; }
+  .modulex-cagri-davetiye-saat { display: flex; align-items: center; gap: 8px; color: --muted--; font-size: 0.95rem; }
+  .modulex-cagri-davetiye-saat .material-symbols-outlined { font-size: 20px; color: --accentInk--; }
+  .modulex-cagri-davetiye-metin { max-width: 62ch; }
+
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-cagri-davetiye :is(.modulex-cagri-davetiye-baslik, .modulex-cagri-davetiye-ust, h3, h4, strong) { letter-spacing: 0; }
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-cagri-davetiye-baslik { line-height: 1.35; }
+  @media (max-width: 768px) {
+    .modulex-cagri-davetiye { padding-inline: 16px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .modulex-cagri-davetiye *, .modulex-cagri-davetiye *::before, .modulex-cagri-davetiye *::after { animation: none !important; transition: none !important; }
+  }
+</style>
+<script>
+  (() => {
+    const P = "modulex-cagri-davetiye";
+    const az = !!(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+    const zarf = (s, P, az) => {
+        const b = s.querySelector("[data-zarf]");
+        const ic = s.querySelector("[data-zarf-ic]");
+        if (!b || !ic) return;
+        s.classList.add(P + "--zjs");
+        const ac = (odak) => {
+          s.classList.add(P + "--acik");
+          b.setAttribute("aria-expanded", "true");
+          ic.inert = false;
+          if (odak) ic.focus({ preventScroll: true });
+        };
+        if (az) { ac(false); return; }
+        ic.inert = true;
+        b.addEventListener("click", () => ac(true));
+      };
+    document.querySelectorAll("." + P).forEach((s) => {
+      if (s.dataset.fbHazir) return;
+      s.dataset.fbHazir = "1";
+      zarf(s, P, az);
+    });
+  })();
+</script>
