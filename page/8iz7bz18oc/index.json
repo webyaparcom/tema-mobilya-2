@@ -1,0 +1,40 @@
+{
+  "id": "8iz7bz18oc",
+  "name": {
+    "tr": "Randevu",
+    "en": "Book a visit",
+    "ar": "احجز موعدًا"
+  },
+  "description": {
+    "tr": "Showroom randevusu.",
+    "en": "Showroom appointment.",
+    "ar": "موعد صالة العرض."
+  },
+  "keyword": {
+    "tr": "teklif",
+    "en": "quote",
+    "ar": "عرض سعر"
+  },
+  "path": "teklif-al",
+  "icon": "request_quote",
+  "category": "",
+  "status": "play",
+  "desing": {
+    "header": [],
+    "body": [
+      "12zxov",
+      "wzhi5u"
+    ],
+    "footer": []
+  },
+  "index": 4,
+  "url": "",
+  "text": {},
+  "title": {
+    "tr": "Randevu",
+    "en": "Book a visit",
+    "ar": "احجز موعدًا"
+  },
+  "date": "2026-11-16T11:36:38.806Z",
+  "update": "2026-11-16T11:41:42.216Z"
+}

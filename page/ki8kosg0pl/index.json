@@ -1,0 +1,40 @@
+{
+  "id": "ki8kosg0pl",
+  "name": {
+    "tr": "Malzeme rehberi",
+    "en": "Material guide",
+    "ar": "دليل الخامات"
+  },
+  "description": {
+    "tr": "Malzemeler ve bakım notları.",
+    "en": "Materials and care notes.",
+    "ar": "الخامات وملاحظات العناية."
+  },
+  "keyword": {
+    "tr": "sss, soru cevap",
+    "en": "faq, questions",
+    "ar": "أسئلة وأجوبة"
+  },
+  "path": "sorular",
+  "icon": "help",
+  "category": "",
+  "status": "play",
+  "desing": {
+    "header": [],
+    "body": [
+      "x0krfh",
+      "12zxov"
+    ],
+    "footer": []
+  },
+  "index": 2,
+  "url": "",
+  "text": {},
+  "title": {
+    "tr": "Malzeme rehberi",
+    "en": "Material guide",
+    "ar": "دليل الخامات"
+  },
+  "date": "2026-11-16T11:36:38.797Z",
+  "update": "2026-11-16T11:41:42.210Z"
+}

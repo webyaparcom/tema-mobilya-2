@@ -1,0 +1,47 @@
+{
+  "name": {
+    "tr": "Hikâyemiz",
+    "en": "Our story",
+    "ar": "قصتنا"
+  },
+  "status": "play",
+  "category": "",
+  "id": "hakkimizda",
+  "url": "",
+  "path": "hakkimizda",
+  "index": 1,
+  "icon": "info",
+  "desing": {
+    "header": [],
+    "body": [
+      "7wue31",
+      "scybt6"
+    ],
+    "footer": []
+  },
+  "pathnext": "",
+  "description": {
+    "tr": "2009’dan beri showroomda dokunarak seçilen mobilya.",
+    "en": "Furniture chosen by touch in the showroom since 2009.",
+    "ar": "أثاث يُختار باللمس في صالة العرض منذ 2009."
+  },
+  "spot": {
+    "tr": "",
+    "en": "",
+    "ar": ""
+  },
+  "desc": {},
+  "title": {
+    "tr": "Hikâyemiz",
+    "en": "Our story",
+    "ar": "قصتنا"
+  },
+  "keyword": {
+    "tr": "hakkımızda",
+    "en": "about",
+    "ar": "من نحن"
+  },
+  "text": {},
+  "update": "2026-11-16T11:41:42.206Z",
+  "date": "2026-10-30"
+}

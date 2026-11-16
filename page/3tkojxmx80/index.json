@@ -1,0 +1,40 @@
+{
+  "id": "3tkojxmx80",
+  "name": {
+    "tr": "Teslimatlar",
+    "en": "Deliveries",
+    "ar": "التسليمات"
+  },
+  "description": {
+    "tr": "Kurgusal müşteri notları.",
+    "en": "Fictional customer notes.",
+    "ar": "ملاحظات زبائن افتراضية."
+  },
+  "keyword": {
+    "tr": "referans, müşteri yorumu",
+    "en": "reference, review",
+    "ar": "مرجع، تقييم"
+  },
+  "path": "referanslar",
+  "icon": "stars",
+  "category": "",
+  "status": "play",
+  "desing": {
+    "header": [],
+    "body": [
+      "u7tblh",
+      "12zxov"
+    ],
+    "footer": []
+  },
+  "index": 3,
+  "url": "",
+  "text": {},
+  "title": {
+    "tr": "Teslimatlar",
+    "en": "Deliveries",
+    "ar": "التسليمات"
+  },
+  "date": "2026-11-16T11:36:38.801Z",
+  "update": "2026-11-16T11:41:42.213Z"
+}

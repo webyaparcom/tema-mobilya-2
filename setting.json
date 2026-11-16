@@ -1,0 +1,54 @@
+{
+  "order": false,
+  "user": false,
+  "description": {
+    "tr": "Kavak Ev: oturma, yemek ve yatak odası koleksiyonları; üç showroomda dokunarak seçin, eve teslim ve kurulum dahil. Demo site; içerik kurgusaldır.",
+    "en": "Kavak Home: living, dining and bedroom collections; choose by touch in three showrooms, with home delivery and assembly. Demo site; content is fictional.",
+    "ar": "بيت كاواك: مجموعات لغرف الجلوس والطعام والنوم؛ اختر باللمس في ثلاث صالات عرض مع التوصيل والتركيب. موقع تجريبي؛ المحتوى افتراضي."
+  },
+  "keyword": {
+    "tr": "mobilya, koltuk, yemek masası, yatak, showroom, Gaziantep",
+    "en": "furniture, sofa, dining table, bed, showroom, Gaziantep",
+    "ar": "أثاث، أريكة، طاولة طعام، سرير، صالة عرض، غازي عنتاب"
+  },
+  "category": "Kurumsal",
+  "name": "Kavak Ev",
+  "domain": "mobilya-2.webyapar.com",
+  "langs": {
+    "tr": true,
+    "en": true,
+    "ar": true,
+    "de": false,
+    "ru": false,
+    "es": false,
+    "fr": false,
+    "it": false,
+    "ja": false,
+    "zh": false,
+    "ko": false,
+    "pt": false
+  },
+  "logo": "logo.png",
+  "multi": false,
+  "publishMode": "static",
+  "font": {
+    "body": "noto-sans",
+    "heading": "dm-serif-display",
+    "ar": {
+      "body": "ibm-plex-sans-arabic",
+      "heading": "noto-kufi-arabic"
+    }
+  },
+  "colorScheme": "auto",
+  "theme_color": "#3F5546",
+  "seo": {
+    "noindex": true
+  },
+  "cssTokens": {
+    "--mx-radius-sm": "8px",
+    "--mx-radius-md": "14px",
+    "--mx-radius-lg": "20px",
+    "--mx-radius-xl": "27px"
+  },
+  "icon": "icon.png"
+}

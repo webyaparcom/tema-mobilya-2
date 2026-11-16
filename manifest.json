@@ -1,0 +1,29 @@
+{
+  "name": "Kavak Ev",
+  "short_name": "Kavak Ev",
+  "description": "Kavak Ev: oturma, yemek ve yatak odası koleksiyonları; üç showroomda dokunarak seçin, eve teslim ve kurulum dahil. Demo site; içerik kurgusaldır.",
+  "start_url": "/tr/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#3F5546",
+  "lang": "tr",
+  "icons": [
+    {
+      "src": "/img/icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/img/icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/img/icon.png",
+      "sizes": "any",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

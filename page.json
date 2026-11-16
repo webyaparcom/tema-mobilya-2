@@ -1,0 +1,165 @@
+{
+  "data": [
+    {
+      "id": "8t9oz7y226",
+      "name": {
+        "tr": "Koleksiyon",
+        "en": "Collection",
+        "ar": "المجموعة"
+      },
+      "description": {
+        "tr": "Oturma, yemek ve yatak odası parçaları.",
+        "en": "Living, dining and bedroom pieces.",
+        "ar": "قطع لغرف الجلوس والطعام والنوم."
+      },
+      "path": "hizmetler",
+      "icon": "work",
+      "category": "",
+      "status": "play",
+      "desing": {
+        "header": [],
+        "body": [
+          "hqww9a",
+          "12zxov"
+        ],
+        "footer": []
+      },
+      "index": 0
+    },
+    {
+      "name": {
+        "tr": "Hikâyemiz",
+        "en": "Our story",
+        "ar": "قصتنا"
+      },
+      "status": "play",
+      "id": "hakkimizda",
+      "path": "hakkimizda",
+      "category": "",
+      "url": "",
+      "index": 1,
+      "icon": "info",
+      "desing": {
+        "header": [],
+        "body": [
+          "7wue31",
+          "scybt6"
+        ],
+        "footer": []
+      },
+      "pathnext": "",
+      "description": {
+        "tr": "2009’dan beri showroomda dokunarak seçilen mobilya.",
+        "en": "Furniture chosen by touch in the showroom since 2009.",
+        "ar": "أثاث يُختار باللمس في صالة العرض منذ 2009."
+      }
+    },
+    {
+      "id": "ki8kosg0pl",
+      "name": {
+        "tr": "Malzeme rehberi",
+        "en": "Material guide",
+        "ar": "دليل الخامات"
+      },
+      "description": {
+        "tr": "Malzemeler ve bakım notları.",
+        "en": "Materials and care notes.",
+        "ar": "الخامات وملاحظات العناية."
+      },
+      "path": "sorular",
+      "icon": "help",
+      "category": "",
+      "status": "play",
+      "desing": {
+        "header": [],
+        "body": [
+          "x0krfh",
+          "12zxov"
+        ],
+        "footer": []
+      },
+      "index": 2
+    },
+    {
+      "id": "3tkojxmx80",
+      "name": {
+        "tr": "Teslimatlar",
+        "en": "Deliveries",
+        "ar": "التسليمات"
+      },
+      "description": {
+        "tr": "Kurgusal müşteri notları.",
+        "en": "Fictional customer notes.",
+        "ar": "ملاحظات زبائن افتراضية."
+      },
+      "path": "referanslar",
+      "icon": "stars",
+      "category": "",
+      "status": "play",
+      "desing": {
+        "header": [],
+        "body": [
+          "u7tblh",
+          "12zxov"
+        ],
+        "footer": []
+      },
+      "index": 3
+    },
+    {
+      "id": "8iz7bz18oc",
+      "name": {
+        "tr": "Randevu",
+        "en": "Book a visit",
+        "ar": "احجز موعدًا"
+      },
+      "description": {
+        "tr": "Showroom randevusu.",
+        "en": "Showroom appointment.",
+        "ar": "موعد صالة العرض."
+      },
+      "path": "teklif-al",
+      "icon": "request_quote",
+      "category": "",
+      "status": "play",
+      "desing": {
+        "header": [],
+        "body": [
+          "12zxov",
+          "wzhi5u"
+        ],
+        "footer": []
+      },
+      "index": 4
+    },
+    {
+      "name": {
+        "tr": "Showroomlar",
+        "en": "Showrooms",
+        "ar": "صالات العرض"
+      },
+      "status": "play",
+      "id": "iletisim",
+      "path": "iletisim",
+      "category": "",
+      "url": "",
+      "index": 5,
+      "icon": "call",
+      "desing": {
+        "header": [],
+        "body": [
+          "wzhi5u",
+          "k8mp01"
+        ],
+        "footer": []
+      },
+      "pathnext": "",
+      "description": {
+        "tr": "Adres, telefon ve çalışma saatleri.",
+        "en": "Address, phone and opening hours.",
+        "ar": "العنوان والهاتف وساعات العمل."
+      }
+    }
+  ],
+  "desc": []
+}
