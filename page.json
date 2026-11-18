@@ -5,12 +5,16 @@
       "name": {
         "tr": "Koleksiyon",
         "en": "Collection",
-        "ar": "المجموعة"
+        "ar": "المجموعة",
+        "de": "Kollektion",
+        "ru": "Коллекция"
       },
       "description": {
         "tr": "Oturma, yemek ve yatak odası parçaları.",
         "en": "Living, dining and bedroom pieces.",
-        "ar": "قطع لغرف الجلوس والطعام والنوم."
+        "ar": "قطع لغرف الجلوس والطعام والنوم.",
+        "de": "Wohn-, Ess- und Schlafzimmermöbel.",
+        "ru": "Мебель для гостиной, столовой и спальни."
       },
       "path": "hizmetler",
       "icon": "work",
@@ -30,7 +34,9 @@
       "name": {
         "tr": "Hikâyemiz",
         "en": "Our story",
-        "ar": "قصتنا"
+        "ar": "قصتنا",
+        "de": "Unsere Geschichte",
+        "ru": "Наша история"
       },
       "status": "play",
       "id": "hakkimizda",
@@ -51,7 +57,9 @@
       "description": {
         "tr": "2009’dan beri showroomda dokunarak seçilen mobilya.",
         "en": "Furniture chosen by touch in the showroom since 2009.",
-        "ar": "أثاث يُختار باللمس في صالة العرض منذ 2009."
+        "ar": "أثاث يُختار باللمس في صالة العرض منذ 2009.",
+        "de": "Seit 2009 Möbel, die man im Showroom durch Anfassen auswählt.",
+        "ru": "С 2009 года мебель, которую выбирают в шоуруме на ощупь."
       }
     },
     {
@@ -59,12 +67,16 @@
       "name": {
         "tr": "Malzeme rehberi",
         "en": "Material guide",
-        "ar": "دليل الخامات"
+        "ar": "دليل الخامات",
+        "de": "Materialien",
+        "ru": "Материалы"
       },
       "description": {
         "tr": "Malzemeler ve bakım notları.",
         "en": "Materials and care notes.",
-        "ar": "الخامات وملاحظات العناية."
+        "ar": "الخامات وملاحظات العناية.",
+        "de": "Materialien und Pflegehinweise.",
+        "ru": "Материалы и рекомендации по уходу."
       },
       "path": "sorular",
       "icon": "help",
@@ -85,12 +97,16 @@
       "name": {
         "tr": "Teslimatlar",
         "en": "Deliveries",
-        "ar": "التسليمات"
+        "ar": "التسليمات",
+        "de": "Lieferungen",
+        "ru": "Доставки"
       },
       "description": {
         "tr": "Kurgusal müşteri notları.",
         "en": "Fictional customer notes.",
-        "ar": "ملاحظات زبائن افتراضية."
+        "ar": "ملاحظات زبائن افتراضية.",
+        "de": "Fiktive Kundennotizen.",
+        "ru": "Вымышленные заметки клиентов."
       },
       "path": "referanslar",
       "icon": "stars",
@@ -111,12 +127,16 @@
       "name": {
         "tr": "Randevu",
         "en": "Book a visit",
-        "ar": "احجز موعدًا"
+        "ar": "احجز موعدًا",
+        "de": "Termin",
+        "ru": "Запись"
       },
       "description": {
         "tr": "Showroom randevusu.",
         "en": "Showroom appointment.",
-        "ar": "موعد صالة العرض."
+        "ar": "موعد صالة العرض.",
+        "de": "Showroom-Termin.",
+        "ru": "Запись в шоурум."
       },
       "path": "teklif-al",
       "icon": "request_quote",
@@ -136,7 +156,9 @@
       "name": {
         "tr": "Showroomlar",
         "en": "Showrooms",
-        "ar": "صالات العرض"
+        "ar": "صالات العرض",
+        "de": "Showrooms",
+        "ru": "Шоурумы"
       },
       "status": "play",
       "id": "iletisim",
@@ -157,7 +179,9 @@
       "description": {
         "tr": "Adres, telefon ve çalışma saatleri.",
         "en": "Address, phone and opening hours.",
-        "ar": "العنوان والهاتف وساعات العمل."
+        "ar": "العنوان والهاتف وساعات العمل.",
+        "de": "Adresse, Telefon und Öffnungszeiten.",
+        "ru": "Адрес, телефон и часы работы."
       }
     }
   ],

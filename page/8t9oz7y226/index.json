@@ -3,17 +3,23 @@
   "name": {
     "tr": "Koleksiyon",
     "en": "Collection",
-    "ar": "المجموعة"
+    "ar": "المجموعة",
+    "de": "Kollektion",
+    "ru": "Коллекция"
   },
   "description": {
     "tr": "Oturma, yemek ve yatak odası parçaları.",
     "en": "Living, dining and bedroom pieces.",
-    "ar": "قطع لغرف الجلوس والطعام والنوم."
+    "ar": "قطع لغرف الجلوس والطعام والنوم.",
+    "de": "Wohn-, Ess- und Schlafzimmermöbel.",
+    "ru": "Мебель для гостиной, столовой и спальни."
   },
   "keyword": {
     "tr": "Malzeme",
     "en": "Materials",
-    "ar": "الخامات"
+    "ar": "الخامات",
+    "de": "Materialien",
+    "ru": "Материалы"
   },
   "path": "hizmetler",
   "icon": "work",
@@ -33,7 +39,9 @@
   "title": {
     "tr": "Koleksiyon",
     "en": "Collection",
-    "ar": "المجموعة"
+    "ar": "المجموعة",
+    "de": "Kollektion",
+    "ru": "Коллекция"
   },
   "date": "2026-11-16T11:36:38.788Z",
   "update": "2026-11-16T11:41:42.203Z"

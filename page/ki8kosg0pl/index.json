@@ -3,17 +3,23 @@
   "name": {
     "tr": "Malzeme rehberi",
     "en": "Material guide",
-    "ar": "دليل الخامات"
+    "ar": "دليل الخامات",
+    "de": "Materialien",
+    "ru": "Материалы"
   },
   "description": {
     "tr": "Malzemeler ve bakım notları.",
     "en": "Materials and care notes.",
-    "ar": "الخامات وملاحظات العناية."
+    "ar": "الخامات وملاحظات العناية.",
+    "de": "Materialien und Pflegehinweise.",
+    "ru": "Материалы и рекомендации по уходу."
   },
   "keyword": {
     "tr": "sss, soru cevap",
     "en": "faq, questions",
-    "ar": "أسئلة وأجوبة"
+    "ar": "أسئلة وأجوبة",
+    "de": "FAQ, Fragen und Antworten",
+    "ru": "FAQ, вопросы и ответы"
   },
   "path": "sorular",
   "icon": "help",
@@ -33,7 +39,9 @@
   "title": {
     "tr": "Malzeme rehberi",
     "en": "Material guide",
-    "ar": "دليل الخامات"
+    "ar": "دليل الخامات",
+    "de": "Materialien",
+    "ru": "Материалы"
   },
   "date": "2026-11-16T11:36:38.797Z",
   "update": "2026-11-16T11:41:42.210Z"

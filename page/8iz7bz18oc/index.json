@@ -3,17 +3,23 @@
   "name": {
     "tr": "Randevu",
     "en": "Book a visit",
-    "ar": "احجز موعدًا"
+    "ar": "احجز موعدًا",
+    "de": "Termin",
+    "ru": "Запись"
   },
   "description": {
     "tr": "Showroom randevusu.",
     "en": "Showroom appointment.",
-    "ar": "موعد صالة العرض."
+    "ar": "موعد صالة العرض.",
+    "de": "Showroom-Termin.",
+    "ru": "Запись в шоурум."
   },
   "keyword": {
     "tr": "teklif",
     "en": "quote",
-    "ar": "عرض سعر"
+    "ar": "عرض سعر",
+    "de": "Angebot",
+    "ru": "оценка"
   },
   "path": "teklif-al",
   "icon": "request_quote",
@@ -33,7 +39,9 @@
   "title": {
     "tr": "Randevu",
     "en": "Book a visit",
-    "ar": "احجز موعدًا"
+    "ar": "احجز موعدًا",
+    "de": "Termin",
+    "ru": "Запись"
   },
   "date": "2026-11-16T11:36:38.806Z",
   "update": "2026-11-16T11:41:42.216Z"

@@ -3,17 +3,23 @@
   "name": {
     "tr": "Vizyon",
     "en": "Vision",
-    "ar": "الرؤية"
+    "ar": "الرؤية",
+    "de": "Vision",
+    "ru": "Видение"
   },
   "description": {
     "tr": "Vizyonumuz",
     "en": "Our vision",
-    "ar": "رؤيتنا"
+    "ar": "رؤيتنا",
+    "de": "Unsere Vision",
+    "ru": "Наше видение"
   },
   "keyword": {
     "tr": "Vizyon",
     "en": "vision, our vision, goals",
-    "ar": "الرؤية, رؤيتنا, الأهداف"
+    "ar": "الرؤية, رؤيتنا, الأهداف",
+    "de": "Vision",
+    "ru": "Видение"
   },
   "path": "vizyon",
   "icon": "visibility",
@@ -29,12 +35,16 @@
   "text": {
     "tr": "<h2>Vizyonumuz</h2>\n<p>Gaziantep’te her ilçeye yakın bir showroom ağı olmak.</p>",
     "en": "<h2>Our vision</h2>\n<p>To be a showroom network close to every district of Gaziantep.</p>",
-    "ar": "<h2>رؤيتنا</h2>\n<p>أن نكون شبكة صالات عرض قريبة من كل بلدة في غازي عنتاب.</p>"
+    "ar": "<h2>رؤيتنا</h2>\n<p>أن نكون شبكة صالات عرض قريبة من كل بلدة في غازي عنتاب.</p>",
+    "de": "<h2>Unsere Vision</h2>\n<p>Ein Showroom-Netzwerk in der Nähe jedes Stadtteils von Gaziantep zu sein.</p>",
+    "ru": "<h2>Наше видение</h2>\n<p>Быть сетью шоурумов вблизи каждого района Газиантепа.</p>"
   },
   "title": {
     "tr": "Vizyon",
     "en": "Vision",
-    "ar": "الرؤية"
+    "ar": "الرؤية",
+    "de": "Vision",
+    "ru": "Видение"
   },
   "date": "2026-11-16T11:36:38.661Z",
   "update": "2026-11-16T11:41:42.225Z",
