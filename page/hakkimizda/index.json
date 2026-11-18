@@ -2,7 +2,9 @@
   "name": {
     "tr": "Hikâyemiz",
     "en": "Our story",
-    "ar": "قصتنا"
+    "ar": "قصتنا",
+    "de": "Unsere Geschichte",
+    "ru": "Наша история"
   },
   "status": "play",
   "category": "",
@@ -23,7 +25,9 @@
   "description": {
     "tr": "2009’dan beri showroomda dokunarak seçilen mobilya.",
     "en": "Furniture chosen by touch in the showroom since 2009.",
-    "ar": "أثاث يُختار باللمس في صالة العرض منذ 2009."
+    "ar": "أثاث يُختار باللمس في صالة العرض منذ 2009.",
+    "de": "Seit 2009 Möbel, die man im Showroom durch Anfassen auswählt.",
+    "ru": "С 2009 года мебель, которую выбирают в шоуруме на ощупь."
   },
   "spot": {
     "tr": "",
@@ -34,12 +38,16 @@
   "title": {
     "tr": "Hikâyemiz",
     "en": "Our story",
-    "ar": "قصتنا"
+    "ar": "قصتنا",
+    "de": "Unsere Geschichte",
+    "ru": "Наша история"
   },
   "keyword": {
     "tr": "hakkımızda",
     "en": "about",
-    "ar": "من نحن"
+    "ar": "من نحن",
+    "de": "Über uns",
+    "ru": "О нас"
   },
   "text": {},
   "update": "2026-11-16T11:41:42.206Z",

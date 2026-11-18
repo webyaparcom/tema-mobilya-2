@@ -3,17 +3,23 @@
   "name": {
     "tr": "Kalite Politikamız",
     "en": "Quality Policy",
-    "ar": "سياسة الجودة"
+    "ar": "سياسة الجودة",
+    "de": "Qualitätspolitik",
+    "ru": "Политика качества"
   },
   "description": {
     "tr": "Kalite politikamız",
     "en": "Our quality policy",
-    "ar": "سياسة الجودة لدينا"
+    "ar": "سياسة الجودة لدينا",
+    "de": "Unsere Qualitätspolitik",
+    "ru": "Наша политика качества"
   },
   "keyword": {
     "tr": "Kalite Politikamız",
     "en": "quality policy, quality, continuous improvement",
-    "ar": "سياسة الجودة, الجودة, التحسين المستمر"
+    "ar": "سياسة الجودة, الجودة, التحسين المستمر",
+    "de": "Qualitätspolitik",
+    "ru": "Политика качества"
   },
   "path": "kalitepolitikamiz",
   "icon": "verified",
@@ -29,12 +35,16 @@
   "text": {
     "tr": "<h2>Kalite Politikamız</h2>\n<p>Malzemesi yazılı ürün kartı, kendi ekibimizle kurulum ve yazılı bakım önerisi.</p>",
     "en": "<h2>Our quality policy</h2>\n<p>A product card stating the material, assembly by our own team and written care advice.</p>",
-    "ar": "<h2>سياسة الجودة لدينا</h2>\n<p>بطاقة منتج تذكر الخامة وتركيب بفريقنا ونصائح عناية مكتوبة.</p>"
+    "ar": "<h2>سياسة الجودة لدينا</h2>\n<p>بطاقة منتج تذكر الخامة وتركيب بفريقنا ونصائح عناية مكتوبة.</p>",
+    "de": "<h2>Unsere Qualitätspolitik</h2>\n<p>Produktkarte mit schriftlicher Materialangabe, Montage durch unser eigenes Team und schriftliche Pflegeempfehlung.</p>",
+    "ru": "<h2>Наша политика качества</h2>\n<p>Карточка изделия с письменным указанием материалов, монтаж силами нашей бригады и письменные рекомендации по уходу.</p>"
   },
   "title": {
     "tr": "Kalite Politikamız",
     "en": "Quality Policy",
-    "ar": "سياسة الجودة"
+    "ar": "سياسة الجودة",
+    "de": "Qualitätspolitik",
+    "ru": "Политика качества"
   },
   "date": "2026-11-16T11:36:38.661Z",
   "update": "2026-11-16T11:41:42.226Z",

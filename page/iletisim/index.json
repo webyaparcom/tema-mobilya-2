@@ -2,7 +2,9 @@
   "name": {
     "tr": "Showroomlar",
     "en": "Showrooms",
-    "ar": "صالات العرض"
+    "ar": "صالات العرض",
+    "de": "Showrooms",
+    "ru": "Шоурумы"
   },
   "status": "play",
   "category": "",
@@ -23,7 +25,9 @@
   "description": {
     "tr": "Adres, telefon ve çalışma saatleri.",
     "en": "Address, phone and opening hours.",
-    "ar": "العنوان والهاتف وساعات العمل."
+    "ar": "العنوان والهاتف وساعات العمل.",
+    "de": "Adresse, Telefon und Öffnungszeiten.",
+    "ru": "Адрес, телефон и часы работы."
   },
   "spot": {
     "tr": "",
@@ -34,12 +38,16 @@
   "title": {
     "tr": "Showroomlar",
     "en": "Showrooms",
-    "ar": "صالات العرض"
+    "ar": "صالات العرض",
+    "de": "Showrooms",
+    "ru": "Шоурумы"
   },
   "keyword": {
     "tr": "iletişim",
     "en": "contact",
-    "ar": "اتصال"
+    "ar": "اتصال",
+    "de": "Kontakt",
+    "ru": "контакты"
   },
   "text": {},
   "update": "2026-11-16T11:41:42.220Z",

@@ -4,12 +4,16 @@
   "description": {
     "tr": "Kavak Ev: oturma, yemek ve yatak odası koleksiyonları; üç showroomda dokunarak seçin, eve teslim ve kurulum dahil. Demo site; içerik kurgusaldır.",
     "en": "Kavak Home: living, dining and bedroom collections; choose by touch in three showrooms, with home delivery and assembly. Demo site; content is fictional.",
-    "ar": "بيت كاواك: مجموعات لغرف الجلوس والطعام والنوم؛ اختر باللمس في ثلاث صالات عرض مع التوصيل والتركيب. موقع تجريبي؛ المحتوى افتراضي."
+    "ar": "بيت كاواك: مجموعات لغرف الجلوس والطعام والنوم؛ اختر باللمس في ثلاث صالات عرض مع التوصيل والتركيب. موقع تجريبي؛ المحتوى افتراضي.",
+    "de": "Kavak Home: Wohn-, Ess- und Schlafzimmerkollektionen; in drei Showrooms zum Anfassen auswählen, Lieferung und Montage inklusive. Demo-Seite; Inhalte sind fiktiv.",
+    "ru": "Kavak Home: коллекции для гостиной, столовой и спальни; выбирайте на ощупь в трёх шоурумах, доставка и сборка включены. Демо-сайт; контент вымышленный."
   },
   "keyword": {
     "tr": "mobilya, koltuk, yemek masası, yatak, showroom, Gaziantep",
     "en": "furniture, sofa, dining table, bed, showroom, Gaziantep",
-    "ar": "أثاث، أريكة، طاولة طعام، سرير، صالة عرض، غازي عنتاب"
+    "ar": "أثاث، أريكة، طاولة طعام، سرير، صالة عرض، غازي عنتاب",
+    "de": "Möbel, Sessel, Esstisch, Bett, Showroom, Gaziantep",
+    "ru": "мебель, кресло, обеденный стол, кровать, шоурум, Газиантеп"
   },
   "category": "Kurumsal",
   "name": "Kavak Ev",
@@ -18,15 +22,27 @@
     "tr": true,
     "en": true,
     "ar": true,
-    "de": false,
-    "ru": false,
+    "de": true,
+    "ru": true,
     "es": false,
     "fr": false,
     "it": false,
     "ja": false,
     "zh": false,
     "ko": false,
-    "pt": false
+    "pt": false,
+    "fa": false,
+    "he": false,
+    "ur": false,
+    "nl": false,
+    "pl": false,
+    "uk": false,
+    "az": false,
+    "ka": false,
+    "el": false,
+    "bg": false,
+    "ro": false,
+    "hi": false
   },
   "logo": "logo.png",
   "multi": false,
